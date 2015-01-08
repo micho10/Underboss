@@ -12,5 +12,8 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_collection">CollectionActivity</string>
     <string name="options_exit_title">Exit</string>
+    <string name="enter_name_textview">Enter your name:</string>
+    <string name="enter_name_button_text">Enter</string>
+    <string name="calling_activity_message">The calling activity was</string>
 
 </resources>

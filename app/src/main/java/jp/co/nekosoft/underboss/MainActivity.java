@@ -10,6 +10,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import jp.co.nekosoft.underboss.collection.CollectionActivity;
+
 
 public class MainActivity extends Activity {
 
