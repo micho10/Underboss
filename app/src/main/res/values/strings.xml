@@ -8,5 +8,8 @@
     <string name="create_army_list_button">Create Army List</string>
     <string name="reference_button">Reference</string>
     <string name="statistics_button">Statistics</string>
+    <string name="title_activity_create">Create</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_collection">CollectionActivity</string>
 
 </resources>

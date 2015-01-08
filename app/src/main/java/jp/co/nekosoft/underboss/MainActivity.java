@@ -1,6 +1,7 @@
 package jp.co.nekosoft.underboss;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -60,7 +61,7 @@ public class MainActivity extends Activity {
     
     public void onCollectionButtonClick(View view) {
 //        TODO: Implement the button onClick logic
-        Toast.makeText(this, R.string.collection_button, Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(this, CollectionActivity.class));
     }
 
     public void onReferenceButtonClick(View view) {
