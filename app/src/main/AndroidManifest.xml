@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".CreateArmyListActivity"
+            android:name=".army.CreateArmyListActivity"
             android:label="@string/title_activity_create"
             android:parentActivityName=".MainActivity" >
             <meta-data
@@ -25,12 +25,25 @@
                 android:value="jp.co.nekosoft.underboss.MainActivity" />
         </activity>
         <activity
-            android:name=".CollectionActivity"
+            android:name=".collection.CollectionActivity"
             android:label="@string/title_activity_collection"
             android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="jp.co.nekosoft.underboss.MainActivity" />
+        </activity>
+        <activity
+            android:name=".battle.BattleDiaryActivity"
+            android:label="@string/title_activity_battle_diary" >
+        </activity>
+        <activity
+            android:name=".battle.BattleReportView"
+            android:label="Battle Report"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name=".reference.ReferenceActivity"
+            android:label="@string/title_activity_reference" >
         </activity>
     </application>
 

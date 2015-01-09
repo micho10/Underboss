@@ -12,8 +12,15 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_collection">CollectionActivity</string>
     <string name="options_exit_title">Exit</string>
-    <string name="enter_name_textview">Enter your name:</string>
-    <string name="enter_name_button_text">Enter</string>
+    <string name="enter_own_faction_textview">Your faction:</string>
+    <string name="enter_enemy_faction_textview">Enemy faction:</string>
+    <string name="enter_battle_date_textview">Date: </string>
+    <string name="send_battle_report_button_text">Enter</string>
     <string name="calling_activity_message">The calling activity was</string>
+    <string name="get_battle_report_text_view">Add battle report</string>
+    <string name="get_battle_report_button_text">Go get it</string>
+    <string name="battle_diary_feedback_text">You played against</string>
+    <string name="title_activity_battle_diary">BattleDiaryActivity</string>
+    <string name="title_activity_reference">ReferenceActivity</string>
 
 </resources>

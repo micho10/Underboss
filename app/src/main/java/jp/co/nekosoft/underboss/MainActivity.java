@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import jp.co.nekosoft.underboss.battle.BattleDiaryActivity;
 import jp.co.nekosoft.underboss.collection.CollectionActivity;
 
 
@@ -93,7 +94,7 @@ public class MainActivity extends Activity {
 
     public void onBattleDiaryButtonClick(View view) {
 //        TODO: Implement the button onClick logic
-        Toast.makeText(this, R.string.battle_diary_button, Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(this, BattleDiaryActivity.class));
     }
 
 }

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="vertical"
@@ -14,12 +15,12 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/enter_name_textview"/>
+            android:text="@string/enter_own_faction_textview"/>
 
         <EditText
             android:layout_width="185dp"
             android:layout_height="wrap_content"
-            android:id="@+id/users_name_edit_text"
+            android:id="@+id/users_faction_edit_text"
             android:inputType="text" />
 
     </LinearLayout>
@@ -27,20 +28,57 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_enemy_faction_textview"/>
+
+        <EditText
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/enemy_faction_edit_text"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_battle_date_textview"/>
+
+        <EditText
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/battle_date_edit_text"
+            android:inputType="date" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
         android:padding="10dp">
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/enter_name_button_text"
-            android:onClick="onSendUsersName"/>
+            android:text="@string/send_battle_report_button_text"
+            android:onClick="onSendBattleReport"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/calling_activity_info_text_view"
-            android:text="@string/calling_activity_message"/>
+            android:text="@string/calling_activity_message"
+            android:layout_margin="30dp"/>
 
     </LinearLayout>
 
