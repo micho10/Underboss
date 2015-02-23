@@ -22,5 +22,10 @@
     <string name="battle_diary_feedback_text">You played against</string>
     <string name="title_activity_battle_diary">BattleDiaryActivity</string>
     <string name="title_activity_reference">ReferenceActivity</string>
+    <string name="army_name_text">Name:</string>
+    <string name="army_name_edit_text_placeholder">Army</string>
+    <string name="warcaster_number_text_view">Warcasters:</string>
+    <string name="points_text_view">Points:</string>
+    <string name="wip">This functionality will be supported in a future release</string>
 
 </resources>

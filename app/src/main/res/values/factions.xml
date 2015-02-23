@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="factions">
+        <item>Convergence of Cyriss</item>
+        <item>Cryx</item>
+        <item>Cygnar</item>
+        <item>Khador</item>
+        <item>Mercenaries</item>
+        <item>Protectorate of Menoth</item>
+        <item>Retribution of Scyrah</item>
+        <item>Circle of Orboros</item>
+        <item>Legion of Everblight</item>
+        <item>Minions</item>
+        <item>Skorne</item>
+        <item>Trollbloods</item>
+    </string-array>
+</resources>

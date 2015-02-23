@@ -10,8 +10,86 @@
     tools:context="jp.co.nekosoft.underboss.army.CreateArmyListActivity">
 
     <TextView
-        android:text="@string/hello_world"
+        android:text="@string/army_name_text"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginRight="20dp"
+        android:id="@+id/army_name_text_view" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/army_name_edit_text"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/army_name_text_view"
+        android:layout_toEndOf="@+id/army_name_text_view"
+        android:text="@string/army_name_edit_text_placeholder"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/army_faction_spinner"
+        android:layout_below="@+id/army_name_edit_text"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <GridLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/army_faction_spinner"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:columnCount="3"
+        android:rowCount="6"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:background="#ff1228f0">
+
+        <TextView
+            android:id="@+id/warcaster_number_text_view"
+            android:text="@string/warcaster_number_text_view"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_row="0"
+            android:layout_column="0" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="2"
+            android:id="@+id/warcaster_number_edit_text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_gravity="left|top"
+            android:layout_row="0"
+            android:layout_column="1" />
+
+        <TextView
+            android:id="@+id/points_text_view"
+            android:text="@string/points_text_view"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_gravity="left|top"
+            android:layout_row="1"
+            android:layout_column="0" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="3"
+            android:id="@+id/points_edit_text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_gravity="left|top"
+            android:layout_row="1"
+            android:layout_column="1" />
+
+    </GridLayout>
 
 </RelativeLayout>

@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import jp.co.nekosoft.underboss.army.CreateArmyListActivity;
 import jp.co.nekosoft.underboss.battle.BattleDiaryActivity;
 import jp.co.nekosoft.underboss.collection.CollectionActivity;
 
@@ -25,14 +26,21 @@ public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        // Restore any content saved
         super.onCreate(savedInstanceState);
+
+        // Set content view
         setContentView(R.layout.activity_main);
 
+        // Initialize UI elements
         createArmyListButton = (Button) findViewById(R.id.create_army_list_button);
         collectionButton = (Button) findViewById(R.id.collection_button);
         referenceButton = (Button) findViewById(R.id.reference_button);
         statisticsButton = (Button) findViewById(R.id.statistics_button);
         battleDiaryButton = (Button) findViewById(R.id.battle_diary_button);
+
+        // Link UI elements to actions in code
     }
 
 
@@ -74,7 +82,7 @@ public class MainActivity extends Activity {
 
     public void onCreateArmyListButtonClick(View view) {
 //        TODO: Implement the button onClick logic
-        Toast.makeText(this, R.string.create_army_list_button, Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(this, CreateArmyListActivity.class));
     }
     
     public void onCollectionButtonClick(View view) {
@@ -84,12 +92,12 @@ public class MainActivity extends Activity {
 
     public void onReferenceButtonClick(View view) {
 //        TODO: Implement the button onClick logic
-        Toast.makeText(this, R.string.reference_button, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, R.string.wip, Toast.LENGTH_SHORT).show();
     }
 
     public void onStatisticsButtonClick(View view) {
 //        TODO: Implement the button onClick logic
-        Toast.makeText(this, R.string.statistics_button, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, R.string.wip, Toast.LENGTH_SHORT).show();
     }
 
     public void onBattleDiaryButtonClick(View view) {
