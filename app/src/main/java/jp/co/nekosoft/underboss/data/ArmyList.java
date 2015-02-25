@@ -2,6 +2,12 @@ package jp.co.nekosoft.underboss.data;
 
 import java.util.List;
 
+/**
+ * Bean class representing an army list.
+ *
+ * @author micho
+ *
+ */
 public class ArmyList {
 
     /* Representative name given to the army list */
@@ -10,13 +16,13 @@ public class ArmyList {
     /* Game system */
     private String gameSystem;
 
-    /* Points value of the list (excluding warjack/warbeast points) */
+    /* Points value of the list (excluding Warjack/Warbeast points granted by the Warcaster/Warlock) */
     private int pointsValue;
 
     /* Faction of the army */
     private String faction;
 
-    /* Mercenary contract, minion pact or theme force */
+    /* Mercenary Contract, Minion Pact or Theme Force */
     private String subFaction;
 
     /* Units forming the army list */
